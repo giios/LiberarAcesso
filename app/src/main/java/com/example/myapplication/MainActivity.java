@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), TelaSeguinte.class);
+
+                String rg = textImputRG.getText().toString();
+                intent.putExtra("rg", rg);
+
+
+
                 startActivity(intent);
             }
         });
